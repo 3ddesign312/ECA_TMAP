@@ -1,0 +1,14 @@
+
+body {
+  font-family: sans-serif;
+  text-align: center;
+}
+#logo-buttons img {
+  height: 50px;
+  margin: 10px;
+  cursor: pointer;
+}
+.woodmode { fill: #006892 !important; }
+.stoll { fill: #a51f44 !important; }
+.bridgewood { fill: #08877b !important; }
+.danver { fill: #d9df2d !important; }

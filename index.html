@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Interactive Dealer Map</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div id="logo-buttons">
+    <img src="logos/woodmode-logo.svg" alt="Wood-Mode" onclick="highlightStates('woodmode')">
+    <img src="logos/stoll-logo.svg" alt="Stoll" onclick="highlightStates('stoll')">
+    <img src="logos/bridgewood-logo.svg" alt="Bridgewood" onclick="highlightStates('bridgewood')">
+    <img src="logos/danver-logo.svg" alt="Danver" onclick="highlightStates('danver')">
+  </div>
+
+  <svg id="us-map" viewBox="0 0 1000 600">
+    <!-- Placeholder for SVG content. Replace this with actual state <path> elements -->
+    <rect width="1000" height="600" fill="#ccc" />
+    <text x="500" y="300" font-size="30" text-anchor="middle" fill="#000">Map Goes Here</text>
+  </svg>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
