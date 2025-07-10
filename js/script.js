@@ -4,20 +4,21 @@ const brandStates = {
   stoll: ["AZ", "CA", "CO", "HI", "TN", "ID", "IL", "IN", "IA", "KS", "KY", "MI", "MN", "MT", "MO", "NE", "ND", "SD", "NV", "OH", "OR", "WA", "WI", "WY", "UT"],
   danver: ["IA", "IL", "IN", "KS", "MI", "MO", "MN", "ND", "NE", "SD", "WI", "OH"]
 };
-
 function highlightStates(brand) {
-  // Clear previous highlights
   const allStates = document.querySelectorAll("#usamap [id]");
-  allStates.forEach(el => el.classList.remove("highlight"));
+  
+  // Remove all brand highlight classes from all states
+  allStates.forEach(el => {
+    el.classList.remove("highlight-woodmode", "highlight-bridgewood", "highlight-stoll", "highlight-danver");
+  });
 
-  // Highlight new states
   const states = brandStates[brand];
   if (!states) return;
 
   states.forEach(state => {
     const el = document.getElementById(state);
     if (el) {
-      el.classList.add("highlight");
+      el.classList.add(`highlight-${brand}`);
     }
   });
 }
