@@ -1,31 +1,23 @@
-#usamap path {
-  fill: #dbdce2;
-  transition: fill 0.3s ease;
+body {
+  margin: 0;
+  background: #000;
 }
-
-.woodmode { fill: #006892; }
-.bridgewood { fill: #08877b; }
-.stoll { fill: #a51f44; }
-.danver { fill: #d9df2d; }
-
-.brand-buttons {
+.logo-bar {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  background: #111;
+}
+.logo-bar img {
+  height: 50px;
+  cursor: pointer;
+}
+.map-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
-  margin-bottom: 20px;
+  padding: 2rem;
 }
-
-.brand-buttons img {
-  width: 100px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.brand-buttons img:hover {
-  transform: scale(1.05);
-}
-
-.map-container {
+svg {
+  width: 90%;
   max-width: 1000px;
-  margin: 0 auto;
 }
