@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  background: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+.brand-buttons {
+  margin-bottom: 20px;
+}
+
+.brand-buttons img {
+  width: 120px;
+  margin: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.brand-buttons img:hover {
+  transform: scale(1.05);
+}
+
+.map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlight {
+  fill: #fdbb2d !important; /* gold-ish */
+  transition: fill 0.3s ease;
+}
