@@ -8,13 +8,19 @@ body {
 
 .brand-buttons {
   margin-bottom: 20px;
+  display: flex;               /* Optional: helps alignment */
+  gap: 20px;                   /* Optional: cleaner spacing between logos */
+  align-items: center;        /* Optional: vertical alignment */
 }
 
 .brand-buttons img {
-  width: 120px;
+  height: 42px;                /* ✅ Normalizes logo height */
+  max-width: 180px;            /* ✅ Prevents wide logos from looking oversized */
+  object-fit: contain;         /* ✅ Maintains logo proportions */
   margin: 10px;
   cursor: pointer;
   transition: transform 0.2s;
+  vertical-align: middle;      /* ✅ Prevents baseline shift issues */
 }
 
 .brand-buttons img:hover {
