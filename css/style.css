@@ -36,9 +36,10 @@ body {
 }
 
 .map-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 100%;
+  max-width: 1000px;   /* You can tweak this for desktop */
+  margin: 0 auto;
+  padding: 0 1rem;     /* Optional: adds margin on mobile */
 }
 
 .highlight-woodmode {
