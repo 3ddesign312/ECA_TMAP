@@ -7,10 +7,11 @@ body {
 }
 
 .brand-buttons {
-  margin-bottom: 20px;
+   margin: 0 auto 20px auto;   /* Top: 0, Bottom: 20px, Left/Right: auto centers the whole block */
   display: flex;               /* Optional: helps alignment */
   gap: 20px;                   /* Optional: cleaner spacing between logos */
   align-items: center;        /* Optional: vertical alignment */
+  justify-content: center;    /* ✅ Centers logos inside the flex container */
 }
 
 .brand-buttons img {
