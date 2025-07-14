@@ -33,16 +33,16 @@ body {
 }
 
 .highlight-stoll {
-  fill: #006666 !important;
+  fill: #a51f44 !important;
   transition: fill 0.3s ease;
 }
 
 .highlight-bridgewood {
-  fill: #cc3366 !important;
+  fill: #08877b !important;
   transition: fill 0.3s ease;
 }
 
 .highlight-danver {
-  fill: #669900 !important;
+  fill: #d9df2d !important;
   transition: fill 0.3s ease;
 }
