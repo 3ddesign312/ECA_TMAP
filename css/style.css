@@ -42,12 +42,6 @@ body {
   padding: 0 1rem;     /* Optional: adds margin on mobile */
 }
 
-#usamap {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
 .highlight-woodmode {
   fill: #006892 !important;
   transition: fill 0.3s ease;
@@ -66,4 +60,10 @@ body {
 .highlight-danver {
   fill: #d9df2d !important;
   transition: fill 0.3s ease;
+}
+
+#usamap {
+  width: 100%;
+  height: auto;
+  display: block;
 }
