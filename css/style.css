@@ -67,3 +67,7 @@ body {
   height: auto;
   display: block;
 }
+@media (max-width: 768px) {
+  .map-container {
+    padding: 0 1rem;
+  }
